@@ -1,4 +1,4 @@
-# CMPS 2200  Recitation 01
+.# CMPS 2200  Recitation 01
 
 **Name (Team Member 1):**_________________________  
 **Name (Team Member 2):**_________________________
