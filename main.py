@@ -79,6 +79,12 @@ def time_search(search_fn, mylist, key):
 	  search function on this input.
 	"""
     ### TODO
+    t1 = time.time()
+    search_fn(mylist, key)
+    t2 = time.time()
+    elapsedTime = (t2 - t1) * 1000
+    
+    return elapsedTime
 
     ###
 
@@ -99,6 +105,8 @@ def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
 	  for each method to run on each value of n
 	"""
     ### TODO
+
+    
 
     ###
 
