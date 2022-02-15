@@ -1,6 +1,6 @@
 .# CMPS 2200  Recitation 01
 
-**Name (Team Member 1):**_________________________  
+**Name (Team Member 1):**__JT McDermott_______________________  
 **Name (Team Member 2):**_________________________
 
 In this recitation, we will investigate asymptotic complexity. Additionally, we will get familiar with the various technologies we'll use for collaborative coding.
@@ -47,11 +47,12 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
 - [ ] 3. Write at least two additional test cases in `test_binary_search` and confirm they pass.
 
 - [ ] 4. Describe the worst case input value of `key` for `linear_search`? for `binary_search`? 
-
+The worst case input for linear_search and binary_search is a key that is not in the list. In linear_search, if a key is not in the list it means the whole list must be iterated to check. For binary_search, it requires the most recursive calls to check for a key not in the list.
 **TODO: your answer goes here**
 
 - [ ] 5. Describe the best case input value of `key` for `linear_search`? for `binary_search`? 
-
+The best case input for linear search is if the key is at index [0] because this element is checked first and then immediately returned.
+For binary_search the best case is if the key is located at the middle index because this element is checked first.
 **TODO: your answer goes here**
 
 - [ ] 6. Complete the `time_search` function to compute the running time of a search function. Note that this is an example of a "higher order" function, since one of its parameters is another function.
