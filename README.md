@@ -62,12 +62,25 @@ For binary_search the best case is if the key is located at the middle index bec
 - [ ] 8. Call `print_results(compare_search())` and paste the results here:
 
 **TODO: add your timing results here**
+|            n |   linear |   binary |
+|--------------|----------|----------|
+|       10.000 |    0.004 |    0.008 |
+|      100.000 |    0.002 |    0.005 |
+|     1000.000 |    0.002 |    0.004 |
+|    10000.000 |    0.002 |    0.004 |
+|   100000.000 |    0.002 |    0.004 |
+|  1000000.000 |    0.002 |    0.024 |
+| 10000000.000 |    0.002 |    0.004 |
 
 - [ ] 9. The theoretical worst-case running time of linear search is $O(n)$ and binary search is $O(log_2(n))$. Do these theoretical running times match your empirical results? Why or why not?
 
 **TODO: your answer goes here**
+The results for linear_search does not match the theoretical run time as the runtime does not increase linearly (or at all). The results for binary_search also do not match the theoretical run time as the runtimes do not increase logarithmically.
 
 - [ ] 10. Binary search assumes the input list is already sorted. Assume it takes $\Theta(n^2)$ time to sort a list of length $n$. Suppose you know ahead of time that you will search the same list $k$ times. 
   + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search? **TODO: your answer goes here**
+  The worst-case complexity is O(n(k)) because we search list of length n k times.
   + For binary search? **TODO: your answer goes here**
+  The worst-case complexity is O(k log_2 n) because we binary search k times.
   + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting? **TODO: your answer goes here**
+  It is more efficient to sort and binary search for values of k greater than 1. 
