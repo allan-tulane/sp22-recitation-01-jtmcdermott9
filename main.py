@@ -108,8 +108,8 @@ def compare_search(sizes=[1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7]):
     outputList = []
     for i in range(len(sizes)):
       n = sizes[i]
-      binary_search_time = time_search(binary_search, sizes[i], -1)
-      linear_search_time = time_search(linear_search, sizes[i], -1)
+      binary_search_time = time_search(binary_search, sizes, -1)
+      linear_search_time = time_search(linear_search, sizes, -1)
 
       outputTuple = (n, linear_search_time, binary_search_time)
       outputList.append(outputTuple)
@@ -138,3 +138,5 @@ def test_compare_search():
     assert res[1][0] == 100
     assert res[0][1] < 1
     assert res[1][1] < 1
+
+print_results(compare_search())
